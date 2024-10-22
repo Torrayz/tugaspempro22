@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Form</title>
+</head>
+<body>
+<h1>Form HTML</h1>
+<form action="/submit" method="POST" enctype="multipart/form-data">
+<!-- Nama -->
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" required><br><br>
+<!-- Gender -->
+<label for="gender">Gender:</label><br>
+<input type="radio" id="male" name="gender" value="male" required>
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female" required>
+<label for="female">Female</label><br><br>
+<!-- Address -->
+<label for="address">Address:</label><br>
+<textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+<!-- Country -->
+<label for="country">Country:</label><br>
+<select id="country" name="country" required>
+<option value="Indonesia">Indonesia</option>
+<option value="Jepang">Jepang</option>
+<option value="Thailand">Thailand</option>
+<option value="Sout Korea">sout Korea</option>
+<option value="Other">Other</option>
+</select><br><br>
+<!-- Email -->
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+<!-- Photo -->
+<label for="photo">Photo:</label><br>
+<input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+<!-- Submit Button -->
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
